@@ -6,6 +6,30 @@ namespace MorningGame.View
 	{
 		public Animation ()
 		{
+
+			public void Initialize(Texture2D texture, Vector2 position,
+				int frameWidth, int frameHeight, int frameCount,
+				int frametime, Color color, float scale, bool looping)
+			{
+				// Keep a local copy of the values passed in
+				this.color = color;
+				this.FrameWidth = frameWidth;
+				this.FrameHeight = frameHeight;
+				this.frameCount = frameCount;
+				this.frameTime = frametime;
+				this.scale = scale;
+
+				Looping = looping;
+				Position = position;
+				spriteStrip = texture;
+
+				// Set the time to zero
+				elapsedTime = 0;
+				currentFrame = 0;
+
+				// Set the Animation to active by default
+				Active = true;
+			}
 			// The image representing the collection of images used for animation
 			private Texture2D spriteStrip;
 
