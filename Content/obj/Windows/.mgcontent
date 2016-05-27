@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Animation/explosion.png</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Animation/mineAnimation.png</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Animation/shipAnimation.png</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Font/gameFont.spritefont</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Sound/explosion.wav</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Sound/gameMusic.mp3</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Sound/laserFire.wav</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Sound/menuMusic.mp3</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Texture/bgLayer1.png</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Texture/bgLayer2.png</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Texture/endMenu.png</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Texture/laser.png</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Texture/mainMenu.png</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Texture/mainbackground.png</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Texture/mine.png</File>
+    <File>/Users/rbar3155/Projects/MorningGame/MorningGame/Content/Texture/player.png</File>
+  </SourceFiles>
+</SourceFileCollection>

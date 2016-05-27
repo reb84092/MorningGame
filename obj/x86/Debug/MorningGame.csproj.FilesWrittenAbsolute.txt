@@ -1,5 +1,36 @@
 /Users/rbar3155/Projects/MorningGame/MorningGame/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
 /Users/rbar3155/Projects/MorningGame/MorningGame/obj/x86/Debug/MorningGame.Icon.ico
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/OpenTK.dll.config
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Animation/explosion.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Animation/mineAnimation.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Animation/shipAnimation.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Font/gameFont.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Sound/explosion.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Sound/gameMusic.ogg
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Sound/gameMusic.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Sound/laserFire.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Sound/menuMusic.ogg
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Sound/menuMusic.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture /bgLayer1.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture /bgLayer2.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture /endMenu.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture /laser.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture /mainMenu.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture /mainbackground.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture /mine.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture /player.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/MorningGame.exe.mdb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/MorningGame.exe
+/Users/rbar3155/Projects/MorningGame/MorningGame/obj/x86/Debug/MorningGame.exe
+/Users/rbar3155/Projects/MorningGame/MorningGame/obj/x86/Debug/MorningGame.exe.mdb
 /Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/MonoGame.Framework.dll
 /Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/OpenTK.dll
 /Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/NVorbis.dll
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture/bgLayer1.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture/bgLayer2.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture/endMenu.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture/laser.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture/mainMenu.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture/mainbackground.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture/mine.xnb
+/Users/rbar3155/Projects/MorningGame/MorningGame/bin/Debug/Content/Texture/player.xnb

@@ -1,13 +1,14 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using MorningGame.View;
 
 namespace MorningGame.Model
 {
-	public class Player
-	{
+	class Player
+	{	
 		// Animation representing the player
-		public Texture2D PlayerTexture;
+		public Animation PlayerAnimation;
 
 		// Position of the Player relative to the upper left side of the screen
 		public Vector2 Position;
@@ -21,61 +22,39 @@ namespace MorningGame.Model
 		// Get the width of the player ship
 		public int Width
 		{
-			get { return PlayerTexture.Width; }
+			get { return PlayerAnimation.FrameWidth; }
 		}
 
 		// Get the height of the player ship
 		public int Height
 		{
-			get { return PlayerTexture.Height; }
-		}
+			get { return PlayerAnimation.FrameHeight; }
+		}		
 
-
-		private void UpdatePlayer(GameTime gameTime)
+		public void Initialize(Animation animation, Vector2 position)
+	
 		{
+			PlayerAnimation = animation;
 
-			// Get Thumbstick Controls
-			player.Position.X += currentGamePadState.ThumbSticks.Left.X *playerMoveSpeed;
-			player.Position.Y -= currentGamePadState.ThumbSticks.Left.Y *playerMoveSpeed;
+			Position = position;
 
-			// Use the Keyboard / Dpad
-			if (currentKeyboardState.IsKeyDown(Keys.Left) ||
-				currentGamePadState.DPad.Left == ButtonState.Pressed)
-			{
-				player.Position.X -= playerMoveSpeed;
-			}
-			if (currentKeyboardState.IsKeyDown(Keys.Right) ||
-				currentGamePadState.DPad.Right == ButtonState.Pressed)
-			{
-				player.Position.X += playerMoveSpeed;
-			}
-			if (currentKeyboardState.IsKeyDown(Keys.Up) ||
-				currentGamePadState.DPad.Up == ButtonState.Pressed)
-			{
-				player.Position.Y -= playerMoveSpeed;
-			}
-			if (currentKeyboardState.IsKeyDown(Keys.Down) ||
-				currentGamePadState.DPad.Down == ButtonState.Pressed)
-			{
-				player.Position.Y += playerMoveSpeed;
-			}
+			Active = true;
 
-			// Make sure that the player does not go out of bounds
-			player.Position.X = MathHelper.Clamp(player.Position.X, 0,GraphicsDevice.Viewport.Width - player.Width);
-			player.Position.Y = MathHelper.Clamp(player.Position.Y, 0,GraphicsDevice.Viewport.Height - player.Height);
+			Health = 100;
 		}
-
-		protected override void Update (GameTime gameTime)
-		{
-			#if !_IOS_&& !_TVOS_
-			if (GamePad.GetState (PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState
-				Exit ();
-				#endif
+			
 
 
-		public Player ()
+
+		public void Update()
 		{
 		}
+
+		public void Draw(SpriteBatch spriteBatch)
+		{ 
+			PlayerAnimation.Draw (spriteBatch);
+		}
+
 	}
-}
 
+}

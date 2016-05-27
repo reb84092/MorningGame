@@ -1,11 +1,25 @@
 ﻿using System;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace MorningGame.View
 {
 	public class Animation
 	{
-		public Animation ()
+
+		// Width of a given frame
+		public Vector2 Position;
+
+		public void Initialize()
 		{
+		}
+		public void Update()
+		{
+		}
+		public void Draw()
+		{
+		}
 
 			public void Initialize(Texture2D texture, Vector2 position,
 				int frameWidth, int frameHeight, int frameCount,
@@ -75,19 +89,56 @@ namespace MorningGame.View
 			// Determines if the animation will keep playing or deactivate after one run
 			public bool Looping;
 
-			// Width of a given frame
-			public Vector2 Position;
+			
+		public void Update(GameTime gameTime)
+		{
+			// Do not update the game if we are not active
+			if (Active == false)
+				return;
 
-			public void Initialize()
+			// Update the elapsed time
+			elapsedTime += (int)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+			// If the elapsed time is larger than the frame time
+			// we need to switch frames
+			if (elapsedTime > frameTime)
 			{
+				// Move to the next frame
+				currentFrame++;
+
+				// If the currentFrame is equal to frameCount reset currentFrame to zero
+				if (currentFrame == frameCount)
+				{
+					currentFrame = 0;
+					// If we are not looping deactivate the animation
+					if (Looping == false)
+						Active = false;
+				}
+
+				// Reset the elapsed time to zero
+				elapsedTime = 0;
 			}
-			public void Update()
-			{
-			}
-			public void Draw()
-			{
-			}
+
+			// Grab the correct frame in the image strip by multiplying the currentFrame index by the frame width
+			sourceRect = new Rectangle(currentFrame * FrameWidth, 0, FrameWidth, FrameHeight);
+
+			// Grab the correct frame in the image strip by multiplying the currentFrame index by the frame width
+			destinationRect = new Rectangle((int)Position.X - (int)(FrameWidth * scale) / 2,
+				(int)Position.Y - (int)(FrameHeight * scale) / 2,
+				(int)(FrameWidth * scale),
+				(int)(FrameHeight * scale));
 		}
+
+
+		public void Draw(SpriteBatch spriteBatch)
+			{
+				// Only draw the animation when we are active
+				if (Active)
+				{
+					spriteBatch.Draw(spriteStrip, destinationRect, sourceRect, color);
+				}
+
+			}
 	}
 }
 

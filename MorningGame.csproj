@@ -51,6 +51,10 @@
     <Compile Include="Controller\Program.cs" />
     <Compile Include="Controller\MorningGame.cs" />
     <Compile Include="View\Animation.cs" />
+    <Compile Include="Model\Enemy.cs" />
+    <Compile Include="Model\Projectile.cs" />
+    <Compile Include="Model\Weapon1.cs" />
+    <Compile Include="Model\Weapon2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Icon.png" />
